@@ -11,48 +11,37 @@ const Applyed = () => {
   const { id } = useParams();
   const api = useApi();
   const [pdata, setPdata] = useState(null);
-  const [pApply, setpApply] = useState(null);
-  useEffect(() => {
-    console.log("Component Re-rendered!");
-  });
+  const [pApply, setpApply] = useState([]);
 
   useEffect(() => {
+    console.log("Fetching data...");
+
     async function fetchData() {
       try {
         const [projectRes, applicationRes] = await Promise.all([
           api.get(`/project/get-project/${id}`, {
-            headers: {
-              "Content-Type": import.meta.env.VITE_EXPRESS_HEADER,
-            },
+            headers: { "Content-Type": import.meta.env.VITE_EXPRESS_HEADER },
             withCredentials: true,
           }),
           api.get(`/application/get-application-by-project-id/${id}`, {
-            headers: {
-              "Content-Type": import.meta.env.VITE_EXPRESS_HEADER,
-            },
+            headers: { "Content-Type": import.meta.env.VITE_EXPRESS_HEADER },
             withCredentials: true,
           }),
         ]);
 
-        setPdata((prev) => ({ ...prev, ...projectRes.data.project }));
-
-        if (applicationRes.status === 200) {
-          setpApply([...applicationRes.data.applications]); // Ensures new reference
-        }
+        setPdata(projectRes.data.project || {}); // Ensure `pdata` is always an object
+        setpApply(applicationRes.data.applications || []); // Default to empty array
       } catch (error) {
-        console.log(error.message);
+        console.error("Error fetching data:", error.message);
       }
     }
 
     fetchData();
   }, [api, id]);
+
   useEffect(() => {
     console.log("pdata updated:", pdata);
   }, [pdata]);
-
-  console.log("pdata:", pdata);
-  console.log("pApply:", pApply);
-  console.log("pdata truthy check:", !!pdata);
 
   return (
     <>
@@ -67,18 +56,20 @@ const Applyed = () => {
             </div>
           </div>
         ) : (
-          <p>Loading project details...</p> // Optional: Show a message
+          <p>Loading project details...</p>
         )}
       </div>
 
       <div className="ad-middle-div">
         <h2 className="ad-h2">List of Applicants</h2>
         <div className="ad-middle-inner">
-          {pApply && pApply.length > 0
-            ? pApply.map((issue, index) => (
-                <OpenIssue key={index} apply={issue} />
-              ))
-            : "No Applications!"}
+          {pApply.length > 0 ? (
+            pApply.map((issue, index) => (
+              <OpenIssue key={index} apply={issue} />
+            ))
+          ) : (
+            <p>No Applications!</p>
+          )}
         </div>
       </div>
     </>
