@@ -11,7 +11,7 @@ const FundScreen = () => {
   const [point, setPoint] = useState(0);
   const [fundData, setFundData] = useState(null);
   const api = useApi();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   useEffect(() => {
     async function fetchData() {
       const fundResponse = await api.get(`/clan/by-id/${clanId}`, {
@@ -82,19 +82,18 @@ const FundScreen = () => {
             },
             withCredentials: true, // Required to send and receive cookies
           }
-        );        
-          toast.info("The point withdraw is successfull!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-          });
+        );
+        toast.info("The point withdraw is successfull!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
         setTimeout(() => navigate(`/detail-screen/${receiptRes.data._id}`));
-          
       }
     } catch (error) {
       return toast.success(error.message, {
@@ -120,7 +119,7 @@ const FundScreen = () => {
               <div className="flex justify-between items-start p-4 border-b-2">
                 <div className="flex-wrap">
                   <p className="font-semibold">Total Available Points</p>
-                  <p>₹ {fundData?.clanPoints}</p>
+                  <p>PT {fundData?.clanPoints}</p>
                 </div>
                 <svg
                   className="w-5 h-5"
@@ -151,7 +150,10 @@ const FundScreen = () => {
                 </div>
               </div>
               <div className="flex justify-between items-start p-4">
-                <Link to={`/transaction-history/${clanId}`} className="font-semibold">
+                <Link
+                  to={`/transaction-history/${clanId}`}
+                  className="font-semibold"
+                >
                   View all transactions
                 </Link>
                 <svg
@@ -176,7 +178,7 @@ const FundScreen = () => {
               <div className="border-b-2 flex flex-col gap-4 p-4 justify-center items-center text-sm">
                 <div className=" flex justify-between items-center w-full">
                   <p>Withdrawable Points</p>
-                  <p>₹ {fundData?.clanPoints}</p>
+                  <p>PT {fundData?.clanPoints}</p>
                 </div>
                 <div className=" flex justify-between items-center w-full">
                   <p>Enter Point</p>
