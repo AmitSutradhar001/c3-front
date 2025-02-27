@@ -12,6 +12,9 @@ const Applyed = () => {
   const api = useApi();
   const [pdata, setPdata] = useState(null);
   const [pApply, setpApply] = useState(null);
+  useEffect(() => {
+    console.log("Component Re-rendered!");
+  });
 
   useEffect(() => {
     async function fetchData() {
