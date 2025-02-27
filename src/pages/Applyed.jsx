@@ -1,5 +1,5 @@
 // responsivness done.
-
+import Toggle from "../components/apply/applyed/Toggle.jsx";
 import AboutAdmin from "../components/apply/AboutAdmin";
 import OpenIssue from "../components/apply/applyed/OpenIssue";
 import Position from "../components/apply/Position";
@@ -13,10 +13,16 @@ import { useApi } from "../context/ApiContext.jsx";
 import Loading from "../components/Loading";
 import "../css/components/apply/Position.css";
 import "../css/components/apply/AboutAdmin.css";
-
+import save from "/apply/save.svg";
+import share from "/apply/share.svg";
+import { useSelector } from "react-redux";
 const Applyed = () => {
   const { id } = useParams();
   // const issues = [1, 2, 3, 4, 5];
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOn, setIsOn] = useState(false);
+  const user = useSelector((state) => state.user.user);
+
   const api = useApi();
   const [pData, setPdata] = useState(null);
   const [pApply, setpApply] = useState([]);
@@ -204,7 +210,7 @@ const Applyed = () => {
                       <div>
                         <h2 className="po-rac-h2">Rating</h2>
                         <h3 className="po-rac-h3">
-                          {data?.rating ? data?.rating : "300-400"}
+                          {pData?.rating ? pData?.rating : "300-400"}
                         </h3>
                       </div>
                     </div>
@@ -213,7 +219,7 @@ const Applyed = () => {
                       <div>
                         <h2 className="po-rac-h2">Average Price per issue</h2>
                         <h3 className="po-rac-h3">
-                          ₹{data?.price ? data?.price : "300-400"}
+                          ₹{pData?.price ? pData?.price : "300-400"}
                         </h3>
                       </div>
                     </div>
@@ -222,13 +228,13 @@ const Applyed = () => {
                       <div>
                         <h2 className="po-rac-h2">Completion Date</h2>
                         <h3 className="po-rac-h3">
-                          {new Date(data?.endDate).toLocaleDateString("en-GB")}
+                          {new Date(pData?.endDate).toLocaleDateString("en-GB")}
                         </h3>
                       </div>
                     </div>
                   </div>
                   <div className="po-last">
-                    {data?.tech_stack?.map((item, index) => (
+                    {pData?.tech_stack?.map((item, index) => (
                       <p key={index}>{item}</p>
                     ))}
                   </div>
