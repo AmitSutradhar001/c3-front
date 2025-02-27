@@ -15,6 +15,8 @@ import "../css/components/apply/AboutAdmin.css";
 import save from "/apply/save.svg";
 import share from "/apply/share.svg";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 // import "../css/pages/Applyed.css";
 
 const Applyed = () => {
@@ -23,7 +25,7 @@ const Applyed = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOn, setIsOn] = useState(false);
   const user = useSelector((state) => state.user.user);
-
+  const navigate = useNavigate();
   const api = useApi();
   const [pData, setPdata] = useState(null);
   const [pApply, setpApply] = useState([]);
