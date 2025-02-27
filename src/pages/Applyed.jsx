@@ -65,10 +65,9 @@ const Applyed = () => {
     call();
     issueCall();
   }, [api, id]);
-  if (loading) {
+  if (!pdata) {
     return <Loading />;
   }
-  console.log(pdata);
 
   return (
     <>
