@@ -17,7 +17,7 @@ const Applyed = () => {
   // const issues = [1, 2, 3, 4, 5];
   const api = useApi();
   const [pdata, setPdata] = useState(null);
-  const [pApply, setpApply] = useState([]);
+  const [pApply, setpApply] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -65,9 +65,6 @@ const Applyed = () => {
     call();
     issueCall();
   }, [api, id]);
-  if (!pdata) {
-    return <Loading />;
-  }
 
   return (
     <>
