@@ -5,7 +5,6 @@ import OpenIssue from "../components/apply/applyed/OpenIssue";
 import Position from "../components/apply/Position";
 import { useParams } from "react-router-dom";
 // import { useApi } from "../context/ApiContext";
-import "../css/pages/Applyed.css";
 // import Loading from "../components/Loading";
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
@@ -16,6 +15,8 @@ import "../css/components/apply/AboutAdmin.css";
 import save from "/apply/save.svg";
 import share from "/apply/share.svg";
 import { useSelector } from "react-redux";
+// import "../css/pages/Applyed.css";
+
 const Applyed = () => {
   const { id } = useParams();
   // const issues = [1, 2, 3, 4, 5];
@@ -126,9 +127,9 @@ const Applyed = () => {
       {pData && <p>amit</p>}
       {pData && <p>{pData.content}</p>}
       {pData && (
-        <div className="ad-outer">
-          <div className="ad-m-1">
-            <div className="ad-inner">
+        <div className="flex flex-col lg:flex-row lg:w-full justify-center md:justify-start pl-5 mt-10 gap-11 md:pl-20 pr-5 lg:pr-20">
+          <div className="flex gap-3 w-full flex-col">
+            <div className="flex md:w-5/6 lg:w-2/3 flex-col">
               <>
                 <div className="outerbox">
                   <Toggle
@@ -241,10 +242,10 @@ const Applyed = () => {
                   </div>
                 </div>
               </>
-              <div className="ad-ab"></div>
-              <div className="ab-outer">
-                <h2 className="ab-h2">About Project</h2>
-                <p className="ab-p">
+              <div className="w-full border-t-[1px] mt-5 border-black"></div>
+              <div className="flex flex-col lg:flex-row lg:w-full justify-center md:justify-start pl-5 mt-10 gap-11 md:pl-20 pr-5 lg:pr-20">
+                <h2 className="text-2xl mt-8 font-bold">About Project</h2>
+                <p className="">
                   {pData?.content
                     ? pData.content
                     : "Nulla ac ultrices sed ornare molestie in eget in. Aliquet duis purus libero enim aliquam ultricies dui scelerisque. Vitae pharetra non praesent vulputate ultrices. Tempor semper ut nisi ac. Elementum commodo ut leo aliquet aliquam. Varius faucibus aliquam tellus elementum eu ullamcorper orci ipsum. Orci erat rhoncus posuere a vel vivamus elit tellus sit."}
@@ -254,9 +255,9 @@ const Applyed = () => {
           </div>
         </div>
       )}
-      <div className="ad-middle-div">
-        <h2 className="ad-h2">List of Applicants</h2>
-        <div className="ad-middle-inner">
+      <div className="flex-col w-full gap-5 justify-center mb-5 items-center md:justify-start mt-2 px-4 md:pl-32">
+        <h2 className="text-2xl mt-8 font-bold">List of Applicants</h2>
+        <div className="flex flex-col mt-5 justify-start items-start gap-4">
           {pApply.length > 0
             ? pApply.map((issue, index) => (
                 <OpenIssue key={index} apply={issue} />
