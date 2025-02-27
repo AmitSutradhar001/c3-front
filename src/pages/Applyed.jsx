@@ -65,18 +65,22 @@ const Applyed = () => {
     call();
     issueCall();
   }, [api, id]);
+  console.log(pdata);
+  console.log(pApply);
 
   return (
     <>
       <div className={`ad-outer `}>
         <ToastContainer style={{ top: "100px" }} />
-        <div className="ad-m-1">
-          <div className="ad-inner">
-            <Position data={pdata} />
-            <div className="ad-ab"></div>
-            <AboutAdmin data={pdata} />
+        {pdata && (
+          <div className="ad-m-1">
+            <div className="ad-inner">
+              <Position data={pdata} />
+              <div className="ad-ab"></div>
+              <AboutAdmin data={pdata} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div className="ad-middle-div">
