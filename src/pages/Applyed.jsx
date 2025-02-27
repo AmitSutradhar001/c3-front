@@ -71,6 +71,7 @@ const Applyed = () => {
 
   return (
     <>
+      {pData && <p>amit</p>}
       <div className={`ad-outer `}>
         <div className="ad-m-1">
           <div className="ad-inner">
