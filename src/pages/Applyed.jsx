@@ -71,16 +71,17 @@ const Applyed = () => {
 
   return (
     <>
-      {pData && <p>amit</p>}
-      <div className={`ad-outer `}>
-        <div className="ad-m-1">
-          <div className="ad-inner">
-            <Position data={pData} />
-            <div className="ad-ab"></div>
-            <AboutAdmin data={pData} />
+      {pData && (
+        <div className="ad-outer">
+          <div className="ad-m-1">
+            <div className="ad-inner">
+              <Position data={pData} />
+              <div className="ad-ab"></div>
+              <AboutAdmin data={pData} />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <div className="ad-middle-div">
         <h2 className="ad-h2">List of Applicants</h2>
