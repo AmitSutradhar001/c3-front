@@ -35,8 +35,9 @@ const Applyed = () => {
         ]);
 
         if (projectRes.status === 200) setPdata(projectRes.data.project);
-        if (applicationRes.status === 200)
-          setpApply(applicationRes.data.applications);
+        if (applicationRes.status === 200) {
+          setpApply([...applicationRes.data.applications]); // Ensures new reference
+        }
       } catch (error) {
         console.log(error.message);
       }
@@ -44,6 +45,9 @@ const Applyed = () => {
 
     fetchData();
   }, [api, id]);
+  useEffect(() => {
+    console.log("pdata updated:", pdata);
+  }, [pdata]);
 
   console.log("pdata:", pdata);
   console.log("pApply:", pApply);
@@ -52,7 +56,7 @@ const Applyed = () => {
     <>
       <div className="ad-outer">
         <ToastContainer style={{ top: "100px" }} />
-        {pdata && (
+        {pdata ? (
           <div className="ad-m-1">
             <div className="ad-inner">
               <Position data={pdata} />
@@ -60,6 +64,8 @@ const Applyed = () => {
               <AboutAdmin data={pdata} />
             </div>
           </div>
+        ) : (
+          <p>Loading project details...</p> // Optional: Show a message
         )}
       </div>
 
