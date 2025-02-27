@@ -119,13 +119,9 @@ const Applyed = () => {
       });
     }
   };
-  console.log(pData);
-  console.log(pApply);
 
   return (
     <>
-      {pData && <p>amit</p>}
-      {pData && <p>{pData.content}</p>}
       {pData && (
         <div className="flex flex-col lg:flex-row lg:w-full justify-center md:justify-start pl-5 mt-10 gap-11 md:pl-20 pr-5 lg:pr-20">
           <div className="flex gap-3 w-full flex-col">
@@ -243,7 +239,7 @@ const Applyed = () => {
                 </div>
               </>
               <div className="w-full border-t-[1px] mt-5 border-black"></div>
-              <div className="flex flex-col lg:flex-row lg:w-full justify-center md:justify-start pl-5 mt-10 gap-11 md:pl-20 pr-5 lg:pr-20">
+              <div className="flex flex-col lg:w-full justify-center md:justify-start pl-5 mt-10 gap-11">
                 <h2 className="text-2xl mt-8 font-bold">About Project</h2>
                 <p className="">
                   {pData?.content
@@ -255,7 +251,7 @@ const Applyed = () => {
           </div>
         </div>
       )}
-      <div className="flex-col w-full gap-5 justify-center mb-5 items-center md:justify-start mt-2 px-4 md:pl-32">
+      <div className="flex-col w-full gap-5 justify-center mb-5 items-center md:justify-start mt-2 px-4 pl-10 md:pl-24 pr-5 lg:pr-24">
         <h2 className="text-2xl mt-8 font-bold">List of Applicants</h2>
         <div className="flex flex-col mt-5 justify-start items-start gap-4">
           {pApply.length > 0
