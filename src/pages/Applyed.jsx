@@ -3,11 +3,11 @@ import Toggle from "../components/apply/applyed/Toggle.jsx";
 import AboutAdmin from "../components/apply/AboutAdmin";
 import OpenIssue from "../components/apply/applyed/OpenIssue";
 import Position from "../components/apply/Position";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 // import { useApi } from "../context/ApiContext";
 // import Loading from "../components/Loading";
 import { useEffect, useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { useApi } from "../context/ApiContext.jsx";
 import Loading from "../components/Loading";
 import "../css/components/apply/Position.css";
@@ -122,6 +122,8 @@ const Applyed = () => {
 
   return (
     <>
+      {" "}
+      <ToastContainer style={{ top: "100px" }} />
       {pData && (
         <div className="flex flex-col lg:flex-row lg:w-full justify-center md:justify-start pl-5 mt-10 gap-11 md:pl-20 pr-5 lg:pr-20">
           <div className="flex gap-3 w-full flex-col">
