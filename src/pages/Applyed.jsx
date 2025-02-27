@@ -68,6 +68,50 @@ const Applyed = () => {
   if (loading) {
     return <Loading />;
   }
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleDelete = async () => {
+    try {
+      const deleteProject = await api.delete(
+        `/project/delete-project/${id}`,
+
+        {
+          headers: {
+            "Content-Type": import.meta.env.VITE_EXPRESS_HEADER,
+          },
+          withCredentials: true,
+        }
+      );
+      if (deleteProject.status === 200) {
+        toast.success("Project is Deleted!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setTimeout(() => {
+          navigate("/projects/admin");
+        }, 1000);
+      }
+    } catch (error) {
+      return toast.error(error.message || "Delete request failed!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
   console.log(pData);
   console.log(pApply);
 
