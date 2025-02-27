@@ -1,7 +1,7 @@
 import AboutAdmin from "../components/apply/AboutAdmin";
 import OpenIssue from "../components/apply/OpenIssue";
 import Position from "../components/apply/Position";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useApi } from "../context/ApiContext";
 import Loading from "../components/Loading";
 import { useEffect, useState } from "react";
@@ -11,6 +11,9 @@ import "../css/pages/Apply.css";
 const Apply = () => {
   const { id } = useParams();
   const api = useApi();
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const user = useSelector((state) => state.user.user);
   const { singleProject } = useSelector((state) => state.gitAndCollabProject);
   const [isOn, setIsOn] = useState(false);
   const [idata, setIdata] = useState([]);
@@ -39,6 +42,51 @@ const Apply = () => {
     }
     issueCall();
   }, [api, id]);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleDelete = async () => {
+    try {
+      const deleteProject = await api.delete(
+        `/project/delete-project/${id}`,
+
+        {
+          headers: {
+            "Content-Type": import.meta.env.VITE_EXPRESS_HEADER,
+          },
+          withCredentials: true,
+        }
+      );
+      if (deleteProject.status === 200) {
+        toast.success("Project is Deleted!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setTimeout(() => {
+          navigate("/projects/admin");
+        }, 1000);
+      }
+    } catch (error) {
+      return toast.error(error.message || "Delete request failed!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
 
   if (loading) {
     return <Loading />;
