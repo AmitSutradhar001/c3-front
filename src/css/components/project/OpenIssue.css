@@ -1,0 +1,61 @@
+.oi-outer {
+  @apply w-full mt-4 border-[1px] border-gray-600 rounded-md;
+}
+.oi-inner {
+  @apply flex flex-wrap justify-between items-start;
+}
+.oi-f-inner {
+  @apply flex gap-4 pt-4 pl-5;
+}
+.oi-p-1 {
+  @apply px-4 my-3;
+}
+.oi-s-inner {
+  @apply h-16 w-16 rounded-lg bg-[#D9D9D9];
+}
+.oi-h2 {
+  @apply text-2xl font-semibold;
+}
+.oi-h3 {
+  @apply text-lg font-medium text-gray-400;
+}
+.oi-s-img {
+  @apply flex flex-wrap gap-4 mt-5 mr-5;
+}
+.oi-img-outer-div {
+  @apply flex flex-wrap  p-2 pl-5 justify-start items-start md:gap-6;
+}
+.oi-img-inner-div {
+  @apply flex flex-wrap justify-start items-start gap-2 md:pt-4;
+}
+.oi-img-h2 {
+  @apply font-medium;
+}
+.oi-img-h3 {
+  @apply font-normal;
+}
+.oi-ui-div {
+  @apply flex pl-5 text-gray-800 flex-wrap justify-start items-center gap-2 md:gap-8 pb-2;
+}
+.oi-issui-div {
+  @apply flex px-3 pb-3 text-gray-800 flex-wrap justify-start items-center gap-2;
+}
+.oi-ui-p {
+  @apply border-[1px] pb-1 border-black px-2 rounded-md;
+}
+.oi-btn-div {
+  @apply flex flex-wrap gap-5 text-center pb-4 md:pr-4 p-2 md:pl-4 w-full justify-center md:justify-between items-center border-t-[1px] border-gray-600;
+}
+.oi-btn-inner-div {
+  @apply flex justify-center flex-wrap gap-8 mt-2;
+}
+
+.oi-btn-inner-f-btn {
+  @apply md:w-32 py-2 px-8 text-black font-semibold text-center border-2 border-blue-400 rounded-md hover:-translate-y-1 hover:scale-110 duration-300 hover:border-purple-500;
+}
+.oi-btn-inner-s-a-btn {
+  @apply md:w-40 py-3 sm:py-0  text-white px-8 font-semibold text-center bg-gradient-to-r from-[#4E4DFF] to-[#A54DFF] rounded-md hover:bg-gradient-to-r hover:from-sky-400 hover:to-purple-500 hover:-translate-y-1 hover:scale-110 duration-300;
+}
+.oi-btn-inner-s-btn {
+  @apply md:w-40 py-3 sm:py-0  text-white px-8 font-semibold text-center bg-gradient-to-r from-[#b5b5e0] to-[#ba85ef] rounded-md;
+}

@@ -1,0 +1,36 @@
+.nm-outer {
+  @apply w-full relative z-30 block bg-white px-6 py-3 shadow-lg md:hidden;
+}
+.nm-inner {
+  @apply flex justify-between items-center;
+}
+.nm-home {
+  @apply flex gap-4 justify-center items-center;
+}
+.nm-h2 {
+  @apply text-2xl font-semibold;
+}
+.nm-icon {
+  @apply text-gray-500 focus:outline-none;
+}
+.nm-svg {
+  @apply w-6 h-6;
+}
+.nm-menu-on {
+  @apply block mt-4 absolute z-30  bg-white right-10 rounded-lg shadow-lg;
+}
+.nm-menu-off {
+  @apply hidden mt-4 absolute z-30  bg-white right-10 rounded-lg shadow-lg;
+}
+.nm-pv-outer {
+  @apply absolute right-0 mt-2 w-fit bg-white shadow-md rounded-md z-10;
+}
+.nm-pv-link {
+  @apply block px-4 py-2 text-gray-800 hover:bg-gray-200;
+}
+.nm-pv-btn {
+  @apply block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-200;
+}
+.nm-link {
+  @apply block py-1 text-lg font-semibold text-purple-500 hover:text-gray-500 text-start px-6;
+}

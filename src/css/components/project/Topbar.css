@@ -1,0 +1,18 @@
+.tb-outer {
+  @apply w-full md:ml-0 ml-4 mt-10;
+}
+.tb-inner {
+  @apply flex w-full justify-center sm:justify-start gap-5;
+}
+.tb-admin {
+  @apply w-32 pt-2 h-32 md:w-40 md:h-40 font-semibold flex border-[1px] border-gray-800 rounded-md justify-center;
+}
+.tb-input-outer {
+  @apply w-full mt-5 flex flex-col sm:flex-row gap-5 justify-center items-center;
+}
+.tb-input-inner {
+  @apply flex w-full gap-2 border-gray-200 border-2 rounded-md p-2;
+}
+.tb-input {
+  @apply min-w-32 focus:outline-none;
+}

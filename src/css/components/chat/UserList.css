@@ -1,0 +1,30 @@
+.uls-outer {
+  @apply max-h-screen overflow-y-scroll;
+}
+.uls-inn {
+  @apply p-4;
+}
+.uls-h2 {
+  @apply text-lg font-bold ml-4 mb-4;
+}
+.uls-inner-div {
+  @apply flex flex-col;
+}
+.uls-inner-2 {
+  @apply flex hover:bg-blue-200  justify-between items-center rounded-2xl px-4;
+}
+.uls-inn-outer {
+  @apply flex justify-start items-start;
+}
+.uls-inn-pro {
+  @apply p-6 mt-2 bg-gray-200 rounded-full;
+}
+.uls-inn-pro-out {
+  @apply p-2 cursor-pointer flex flex-col justify-start items-start;
+}
+.uls-inn-pro-h2 {
+  @apply text-lg font-semibold;
+}
+.uls-inn-pro-h3 {
+  @apply text-gray-500;
+}

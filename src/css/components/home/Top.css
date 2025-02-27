@@ -1,0 +1,24 @@
+.outer {
+  @apply relative bg-no-repeat bg-center bg-cover;
+}
+.inner {
+  @apply flex flex-col p-5 md:p-0 md:pl-20 flex-wrap;
+}
+.s-inner {
+  @apply flex flex-col flex-wrap justify-start gap-5;
+}
+.h2-top {
+  @apply text-5xl 2xl:text-7xl   md:mt-14 font-bold text-white;
+}
+.h2-inner {
+  @apply flex flex-col flex-wrap;
+}
+.p-tag {
+  @apply text-white 2xl:text-xl font-medium;
+}
+.img-div {
+  @apply flex justify-end lg:m-20 md:p-5 3xl:mb-24 5xl:mb-32 6xl:mb-48 m-10;
+}
+.img-t {
+  @apply 3xl:w-96 3xl:h-96 5xl:h-[450px] 5xl:w-[450px];
+}

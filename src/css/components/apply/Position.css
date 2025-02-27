@@ -1,0 +1,60 @@
+.outerbox {
+  @apply w-full;
+}
+.po-img-div {
+  @apply flex flex-wrap justify-between;
+}
+.po-img-outer-div {
+  @apply flex gap-4;
+}
+.po-img {
+  @apply rounded-lg bg-[#D9D9D9];
+}
+.po-h2 {
+  @apply text-2xl font-bold;
+}
+.po-h3 {
+  @apply text-lg font-medium text-gray-400;
+}
+.po-img-share {
+  @apply flex justify-start items-start flex-wrap gap-4;
+}
+.po-btn-div {
+  @apply relative;
+}
+.po-btn-1 {
+  @apply text-white focus:outline-none;
+}
+.po-rac-outer {
+  @apply flex flex-wrap justify-start items-start gap-6;
+}
+.po-btn-svg {
+  @apply w-6 h-6 text-gray-900;
+}
+.po-btn-ul {
+  @apply absolute right-0 top-full bg-white w-52 shadow-md;
+}
+.po-btn-del {
+  @apply border-b w-full hover:bg-gray-100 border-gray-200;
+}
+.po-btn-del-span {
+  @apply block p-4 text-gray-700;
+}
+
+.po-btn-edit {
+  @apply block p-4 text-gray-700;
+}
+.po-rac-inner {
+  @apply flex flex-wrap justify-start items-start gap-2 pt-4;
+}
+.po-rac-h2 {
+  @apply font-medium;
+}
+.po-rac-h3 {
+  @apply font-normal;
+}
+.po-last {
+}
+.po-last {
+  @apply flex pl-4 text-gray-800 pt-4 flex-wrap justify-start items-center gap-2 md:gap-8;
+}

@@ -1,0 +1,39 @@
+.sig-outer {
+  @apply flex pt-5 flex-col items-center gap-5 justify-center min-h-screen sm:bg-white md:bg-white;
+}
+.sig-inner {
+  @apply flex flex-col z-20 bg-white rounded-md flex-wrap justify-center items-center shadow-xl p-8 border-[1px];
+}
+.sig-h1 {
+  @apply text-4xl text-center pt-2 font-bold pb-4;
+}
+.sig-form {
+  @apply flex flex-col flex-wrap justify-center items-start;
+}
+.sig-check {
+  @apply flex w-full justify-between items-center;
+}
+.sig-m-div {
+  @apply w-full flex justify-center items-center;
+}
+.sig-row-div {
+  @apply w-full border-b-[1px] border-gray-500;
+}
+.sig-row-p {
+  @apply px-2 font-medium;
+}
+.sig-check-div-new {
+  @apply w-full;
+}
+.sig-last {
+  @apply text-center flex justify-center items-center w-full;
+}
+.sig-span {
+  @apply text-[#A54DFF] hover:cursor-pointer pl-1;
+}
+.sig-upper-svg {
+  @apply absolute hidden md:block top-0 left-0 w-[400px] xl:w-[500px] 2xl:w-[600px] 3xl:w-[700px] 4xl:w-[800px];
+}
+.sig-down-svg {
+  @apply absolute hidden md:block -bottom-80 right-0 w-[500px] xl:w-[500px] 2xl:w-[600px] 3xl:w-[700px] 4xl:w-[800px];
+}

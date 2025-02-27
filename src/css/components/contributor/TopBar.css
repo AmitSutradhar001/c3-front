@@ -1,0 +1,24 @@
+.to-outer {
+  @apply w-full ml-4 mt-10;
+}
+.to-inner {
+  @apply flex justify-center sm:justify-start w-full gap-5;
+}
+.to-admin {
+  @apply w-32 pt-2 h-32 md:w-40 md:h-40 font-semibold flex border-[1px] border-gray-800 rounded-md justify-center;
+}
+.to-inner-div {
+  @apply w-full mt-5 flex gap-5 flex-wrap sm:flex-nowrap justify-center items-center;
+}
+.to-sm-div {
+  @apply flex gap-2;
+}
+.to-img-input-div {
+  @apply flex w-full gap-2 border-gray-200 border-2 rounded-md py-1 px-2 mr-2;
+}
+.to-input {
+  @apply min-w-32 focus:outline-none;
+}
+.to-btn {
+  @apply w-full py-1 px-8 text-white font-semibold text-center bg-gradient-to-r from-[#4E4DFF] to-[#A54DFF] rounded-md hover:bg-gradient-to-r hover:from-sky-400 hover:to-purple-500 hover:-translate-y-1 hover:scale-110 duration-300;
+}

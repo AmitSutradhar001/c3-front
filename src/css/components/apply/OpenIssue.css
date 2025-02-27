@@ -1,0 +1,27 @@
+.op-outer {
+  @apply flex w-full max-h-96 overflow-hidden justify-between border-[1px] rounded-md border-gray-700;
+}
+.op-inner {
+  @apply w-full text-start  pb-3 p-4;
+}
+.op-h2 {
+  @apply text-xl h-8 overflow-hidden font-bold;
+}
+.op-p {
+  @apply h-24 overflow-hidden font-normal w-full text-gray-500 pb-3 text-pretty;
+}
+.op-s-out-div {
+  @apply flex flex-col md:flex-row justify-between items-center text-center;
+}
+.op-s-inn-div {
+  @apply flex flex-wrap gap-2;
+}
+.op-s-inner-p {
+  @apply px-3 py-1 mt-2 rounded-md bg-[#F9F1F1];
+}
+.op-last {
+  @apply flex w-32 mr-4 justify-center items-center;
+}
+.op-link-btn {
+  @apply w-full mt-3 p-2 text-white font-semibold text-center bg-gradient-to-r from-[#4E4DFF] to-[#A54DFF] rounded-md;
+}

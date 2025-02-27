@@ -1,0 +1,39 @@
+.pj-outer {
+  @apply flex flex-col lg:flex-row w-full gap-4 lg:gap-12;
+}
+.pj-inner {
+  @apply flex flex-col flex-1 px-10 sm:px-0 sm:ml-14 md:ml-24;
+}
+.pj-issue-outer {
+  @apply w-full flex-col md:flex-row pl-3 md:pl-0 mt-5 flex gap-5 md:gap-0 justify-center items-center;
+}
+.pj-issue-inner {
+  @apply flex text-3xl font-semibold w-full gap-2 p-2;
+}
+.pj-img-btn {
+  @apply w-52 flex justify-center items-center gap-2 mt-1  p-2 text-white font-semibold text-center bg-gradient-to-r from-[#4E4DFF] to-[#A54DFF] rounded-md hover:bg-gradient-to-r hover:from-sky-400 hover:to-purple-500 hover:-translate-y-1 hover:scale-110 duration-300;
+}
+.pj-s-last {
+  @apply w-full flex flex-col gap-4;
+}
+.pj-pg-outer {
+  @apply flex gap-2 justify-center bg-white rounded-lg mt-10 mb-10;
+}
+.pj-pg-btn-1 {
+  @apply h-10 border-2 border-gray-400 px-1 rounded-lg hover:bg-gray-400 hover:text-white;
+}
+.pj-pg-svg {
+  @apply w-8 h-8 fill-current;
+}
+.pj-pg-btn {
+  @apply h-10 border-2 hover:bg-indigo-500 hover:text-white hover:border-0 font-semibold rounded-lg w-10;
+}
+.pj-pg-btn-a {
+  @apply border-indigo-600 text-indigo-600;
+}
+.pj-pg-btn-i {
+  @apply border-gray-400;
+}
+.pj-last {
+  @apply lg:mt-7 md:ml-10 mr-20 lg:w-52;
+}

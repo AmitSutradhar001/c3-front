@@ -1,0 +1,24 @@
+.c-outer {
+  @apply flex flex-col md:flex-row gap-4 border-b-2 py-4;
+}
+.c-pro {
+  @apply w-20 h-10 rounded-full;
+}
+.c-inner {
+  @apply gap-1;
+}
+.c-inner-h2 {
+  @apply text-[#686868];
+}
+.c-inner-h2 {
+  @apply font-bold;
+}
+.c-inner-p {
+  @apply text-gray-500;
+}
+.c-btn {
+  @apply flex gap-4 pt-2;
+}
+.c-date {
+  @apply md:w-2/3 w-full;
+}

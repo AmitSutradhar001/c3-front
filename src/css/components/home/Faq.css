@@ -1,0 +1,30 @@
+.fq-outer {
+  @apply w-full flex flex-col flex-wrap justify-center items-center;
+}
+.fq-inn {
+  @apply w-full pb-2 flex justify-between items-center;
+}
+.fq-h2 {
+  @apply text-4xl font-bold;
+}
+.fq-inn-2 {
+  @apply flex flex-wrap gap-2 justify-center items-center;
+}
+.fq-inn-h2 {
+  @apply text-2xl text-center font-medium text-[#6B6B6B];
+}
+.fq-inn-img {
+  @apply w-6 h-6;
+}
+.fq-inn-out {
+  @apply flex flex-col w-full px-3 py-4 border-b border-gray-200;
+}
+.fq-inn-inner {
+  @apply flex justify-between items-center gap-5 cursor-pointer;
+}
+.fq-inn-inner-p {
+  @apply text-lg font-medium;
+}
+.fq-of-p {
+  @apply mt-3 text-gray-600;
+}

@@ -1,0 +1,21 @@
+.cp-outer {
+  @apply border-[1px] mx-5 lg:mx-0 w-full lg:h-64  rounded-md border-gray-600 flex flex-col justify-center 3xl:justify-start items-center p-2;
+}
+.cp-h2 {
+  @apply font-semibold p-1 text-2xl;
+}
+.cp-inner {
+  @apply flex w-full gap-1 border-gray-400 border-[1px] rounded-md py-1 px-3;
+}
+.cp-inner-input {
+  @apply focus:outline-none w-auto mr-5;
+}
+.cp-last {
+  @apply flex flex-wrap w-full justify-center items-center gap-3 pt-3;
+}
+.cp-last-div {
+  @apply flex items-center bg-gray-200 px-2 py-1 rounded-md;
+}
+.cp-s-last {
+  @apply flex flex-wrap w-full justify-center items-center gap-3 pt-3;
+}

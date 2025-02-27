@@ -1,0 +1,33 @@
+.log-outer {
+  @apply flex flex-col gap-5 items-center -top-7 justify-center md:h-screen sm:bg-white md:bg-white;
+}
+.log-inner {
+  @apply flex flex-col mt-10 md:mt-0 z-20 bg-white rounded-md flex-wrap justify-center items-center shadow-xl p-8 border-[1px];
+}
+.log--h1 {
+  @apply text-4xl text-center pt-2 font-bold pb-4;
+}
+.log-form {
+  @apply flex flex-col flex-wrap justify-center items-start;
+}
+.log-check-outer {
+  @apply flex w-full justify-between items-center;
+}
+.log-check-p {
+  @apply text-[#A54DFF] hover:cursor-pointer;
+}
+.log-p {
+  @apply text-center w-full p-2;
+}
+.log-img-div {
+  @apply flex justify-center items-center gap-4 w-full p-2 flex-wrap;
+}
+.log-img {
+  @apply p-2 border-2 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 rounded-lg hover:cursor-pointer;
+}
+.log-upper-svg {
+  @apply absolute hidden md:block top-0 left-0 w-[400px] xl:w-[500px] 2xl:w-[600px] 3xl:w-[700px] 4xl:w-[800px];
+}
+.log-down-svg {
+  @apply absolute hidden md:block -bottom-20 right-0 w-[400px] xl:w-[500px] 2xl:w-[600px] 3xl:w-[700px] 4xl:w-[800px];
+}

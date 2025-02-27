@@ -1,0 +1,6 @@
+.carousel-outer-div {
+  @apply container mx-auto px-4;
+}
+.carousel-div {
+  @apply p-4;
+}

@@ -1,0 +1,46 @@
+.nv-outer {
+  @apply hidden md:block relative w-full z-30 bg-white;
+}
+.nv-inner {
+  @apply w-full z-20  bg-white flex flex-wrap justify-between md:px-20 py-3 shadow-lg;
+}
+.nv-home-link {
+  @apply flex gap-4 justify-center items-center;
+}
+.nv-home-h2 {
+  @apply text-2xl font-semibold;
+}
+.nv-ex-div {
+  @apply flex gap-6 flex-wrap justify-center items-center;
+}
+.nv-pro-nav-active {
+  @apply px-6 py-3 rounded-full bg-gray-200 border-green-300 border-2;
+}
+.nv-pro-nav-inactive {
+  @apply px-6 py-3 rounded-full bg-gray-200  border-2;
+}
+.nv-pv-outer {
+  @apply absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md z-10;
+}
+.nv-pv-link {
+  @apply block px-4 py-2 text-gray-800 hover:bg-gray-200;
+}
+.nv-pv-btn {
+  @apply block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-200;
+}
+.nv-active {
+  @apply text-lg font-normal text-[#6a21d0];
+}
+.nv-inactive {
+  @apply text-lg font-normal text-gray-500;
+}
+.nv-profile-active {
+  @apply p-6 rounded-full bg-gray-200 border-green-400 border-2;
+}
+.nv-profile-inactive {
+  @apply p-6 rounded-full bg-gray-200;
+}
+
+.nv-signup {
+  @apply px-6 py-2 text-white font-semibold rounded-xl bg-[#984DFF]  transition ease-in-out delay-150 hover:bg-blue-400 hover:-translate-y-1 hover:scale-110 duration-300;
+}

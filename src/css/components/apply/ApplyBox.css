@@ -1,0 +1,30 @@
+.apb-overlay {
+  @apply w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 fixed top-0 left-0;
+}
+
+.apb-outer-div {
+  @apply min-w-[300px] w-full lg:w-[400px] h-[340px] border-gray-400 rounded-md border-2 bg-white;
+}
+
+.apb-inner-div {
+  @apply w-full py-2 font-semibold text-center border-b-2 border-gray-400;
+}
+
+.apb-form {
+  @apply flex flex-col flex-wrap justify-start px-4 pt-2 pb-2;
+}
+
+.apb-p {
+  @apply pb-1;
+}
+
+.apb-textarea {
+  @apply min-w-[280px] resize-none min-h-[180px] w-full border-2 border-gray-400 rounded-sm focus:outline-none;
+}
+
+.apb-last {
+  @apply mx-5 flex gap-3 justify-between;
+}
+.apb-last-btn {
+  @apply w-full mt-3 p-2 text-white font-semibold text-center bg-gradient-to-r from-[#f23737] to-[#d9c267] hover:from-[#d9c267] hover:to-[#f23737] rounded-md;
+}

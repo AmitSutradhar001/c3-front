@@ -1,0 +1,3 @@
+.rs-outer {
+  @apply flex py-4 lg:pr-0 flex-row w-full flex-wrap lg:w-64 justify-center items-start  lg:flex-col lg:gap-12 gap-8 sm:gap-4;
+}

@@ -1,0 +1,6 @@
+.p-form-out {
+  @apply flex justify-center items-center absolute;
+}
+.edit-p {
+  @apply flex justify-center w-full;
+}

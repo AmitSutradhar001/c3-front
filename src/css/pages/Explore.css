@@ -1,0 +1,36 @@
+.exp-outer {
+  @apply md:pl-20 w-full;
+}
+.exp-out {
+  @apply flex gap-8 w-full;
+}
+.exp-inner {
+  @apply w-full my-8;
+}
+.exp-h2 {
+  @apply text-3xl font-bold pl-10 md:pl-0;
+}
+.exp-pro-div {
+  @apply flex pl-10 pr-10 md:pl-0 pt-4  overflow-hidden justify-between md:pr-20 items-center;
+}
+.exp-pro {
+  @apply p-8 rounded-full bg-gray-300;
+}
+.exp-con-outer {
+  @apply my-8 flex w-full gap-10;
+}
+.exp-con-h2 {
+  @apply text-3xl pl-10 md:pl-0 font-bold pb-4;
+}
+.exp-con-div {
+  @apply pl-10;
+}
+.exp-com-div {
+  @apply pr-10 hidden lg:block w-3/12;
+}
+.exp-admin-div {
+  @apply my-8 w-3/4;
+}
+.exp-admin-h2 {
+  @apply text-3xl font-bold pb-4 pl-10 md:pl-0;
+}

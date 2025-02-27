@@ -1,0 +1,15 @@
+.isu-outer {
+  @apply flex items-center p-4 justify-center min-h-screen;
+}
+.isu-inn {
+  @apply flex flex-col z-50 bg-white rounded-md flex-wrap justify-center items-center shadow-xl p-8 border-[1px];
+}
+.isu-h1 {
+  @apply text-4xl text-center pt-2 font-bold pb-8;
+}
+.isu-form {
+  @apply flex flex-col flex-wrap justify-center items-start;
+}
+.isu-add-div {
+  @apply flex justify-end items-end w-full;
+}

@@ -1,0 +1,63 @@
+.ch-outer {
+  @apply p-4 bg-white min-h-screen max-h-screen md:h-full flex flex-col;
+}
+.ch-inner {
+  @apply flex justify-between items-start pb-3 border-b-2;
+}
+.ch-inn-2 {
+  @apply flex gap-3;
+}
+.ch-pro-div {
+  @apply w-5 h-5 p-5 md:p-5 bg-gray-200 rounded-full;
+}
+.ch-pro-h2 {
+  @apply text-lg font-bold;
+}
+.ch-pro-p {
+  @apply text-base;
+}
+.ch-pro-btn {
+  @apply md:hidden p-2 text-black bg-gray-200 rounded;
+}
+.ch-msg-div {
+  @apply flex-1 overflow-y-scroll mb-4 w-full;
+}
+.ch-msg-inn {
+  @apply p-2 flex w-full items-center;
+}
+.ch-msg-me {
+  @apply text-end justify-end;
+}
+.ch-msg-u {
+  @apply text-start justify-start;
+}
+.ch-msg-pro {
+  @apply w-5 h-5 p-5 md:p-5 bg-gray-200 rounded-full;
+}
+.ch-msg-pro-inn {
+  @apply flex flex-col max-w-full md:max-w-96 bg-white rounded-lg p-3;
+}
+.ch-msg-pro-div-outer {
+  @apply inline-block p-2 rounded  text-gray-700 bg-[#fec9f14f] text-start;
+}
+.ch-msg-out {
+  @apply flex flex-col max-w-full md:max-w-96 bg-white rounded-lg p-3;
+}
+.ch-msg-in-3 {
+  @apply inline-block p-2 rounded  text-gray-700 bg-[#fec9f14f] text-start;
+}
+.ch-in-pro {
+  @apply w-5 h-5 p-5 md:p-5 bg-gray-200 rounded-full;
+}
+.ch-msg-inp {
+  @apply flex-shrink-0;
+}
+.ch-msg-inp-in {
+  @apply flex gap-4;
+}
+.ch-last-in {
+  @apply flex-1 p-2 border border-[#fec9f14f] rounded-l bg-[#fec9f14f];
+}
+.ch-last-btn {
+  @apply bg-gradient-to-r from-[#4E4DFF] to-[#A54DFF] px-4 md:px-10 py-2  text-white rounded-md ml-2;
+}

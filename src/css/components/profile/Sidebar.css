@@ -1,0 +1,72 @@
+.psd-out {
+  @apply bg-[#F9F9F9] w-full lg:w-2/6 h-fit lg:h-screen p-8 border-r-2;
+}
+.psd-in {
+  @apply flex gap-4 justify-start items-start;
+}
+.psd-in-img{
+  @apply w-16 h-16 p-2
+}
+.psd-in-2 {
+  @apply w-12 h-12 p-12 bg-gray-200 rounded-lg;
+}
+.psd-in-3 {
+  @apply flex flex-col;
+}
+.psd-h2 {
+  @apply text-start text-xl font-bold;
+}
+.psd-in-4 {
+  @apply flex gap-5 flex-wrap items-center justify-start;
+}
+.psd-h3 {
+  @apply text-base;
+}
+.psd-in-5 {
+  @apply flex gap-5 flex-wrap mt-3;
+}
+.psd-in-5-h2 {
+  @apply text-lg text-center;
+}
+.psd-in-5-h3 {
+  @apply text-lg text-center;
+}
+.psd-des {
+  @apply flex flex-col gap-2 mt-4 justify-start items-start;
+}
+.psd-des-t {
+  @apply text-base font-medium text-gray-600;
+}
+.psd-ul {
+  @apply flex w-full justify-between items-center flex-wrap;
+}
+.psd-ul-in {
+  @apply relative inline-block hover:-translate-y-1 hover:scale-110 duration-300;
+}
+.psd-ul-link {
+  @apply relative z-10 flex items-center gap-3 px-6 py-2 font-bold text-transparent bg-white bg-clip-text bg-gradient-to-r from-[#4538f8] to-purple-500;
+}
+.psd-ul-pro-out {
+  @apply absolute inset-0 w-full h-full bg-gradient-to-r from-[#4538f8] to-purple-500 rounded-md p-[2px];
+}
+.psd-ul-pro {
+  @apply w-full h-full bg-white rounded-md;
+}
+.psd-pro-add {
+  @apply px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:bg-gradient-to-r hover:from-sky-400 hover:to-purple-500 hover:-translate-y-1 hover:scale-110 duration-300;
+}
+.psd-p-out {
+  @apply mt-4 border-b-2 pb-2 cursor-pointer;
+}
+.psd-p-in {
+  @apply flex justify-between items-center w-full flex-wrap;
+}
+.psd-p-in-1 {
+  @apply text-xl font-semibold hover:text-purple-500 text-gray-500;
+}
+.psd-p-in-ul {
+  @apply mt-2 ml-2 border-b-2 flex justify-between w-full items-center;
+}
+.psd-p-in-li {
+  @apply p-2   text-black font-normal;
+}

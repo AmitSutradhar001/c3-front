@@ -1,0 +1,45 @@
+.cn-outer {
+  @apply w-auto h-auto border-[1px] p-2 border-gray-600 rounded-md;
+}
+.cn-inner {
+  @apply text-2xl flex w-full justify-center items-center p-2;
+}
+.cn-month {
+  @apply flex justify-between items-center;
+}
+.cn-month-h1 {
+  @apply select-none font-semibold;
+}
+.cn-img-left {
+  @apply flex gap-10 items-center;
+}
+.cn-img {
+  @apply cursor-pointer hover:scale-105 transition-all;
+}
+.cn-img-h2 {
+  @apply cursor-pointer hover:scale-105 transition-all;
+}
+.cn-f-div {
+  @apply grid grid-cols-7;
+}
+.cn-f-div-h1 {
+  @apply text-sm pl-4 mt-2 text-center w-4 h-4 grid place-content-center text-gray-500 select-none;
+}
+.cn-s-div {
+  @apply grid grid-cols-7;
+}
+.cn-s-inner-div {
+  @apply p-2 text-center h-10 grid place-content-center text-sm border-t;
+}
+.cn-s-inner-div-h1 {
+  @apply h-5 w-5 rounded-full grid place-content-center hover:bg-black hover:text-white transition-all cursor-pointer select-none;
+}
+.cn-s-inner-div-h1-currentmonth {
+  @apply text-gray-400;
+}
+.cn-s-inner-div-h1-today {
+  @apply bg-red-600 text-white;
+}
+.cn-s-inner-div-h1-date {
+  @apply bg-black text-white;
+}

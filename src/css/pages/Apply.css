@@ -1,0 +1,38 @@
+.outrbox {
+  @apply flex flex-col lg:flex-row lg:w-full justify-start pl-5  mt-10 sm:pl-20 gap-11 pr-5 sm:pr-20;
+}
+.innerbox {
+  @apply flex w-5/6 flex-col;
+}
+.ay-i-div {
+  @apply w-full border-t-[1px] mt-5 border-black;
+}
+.ay-issue-outer {
+  @apply flex-col w-full gap-5 justify-start mt-2 md:px-8 mb-5;
+}
+.ay-issue-h2 {
+  @apply text-2xl my-3 px-5 md:px-10 font-bold;
+}
+.ay-issue-i-div {
+  @apply grid  lg:grid-cols-2 p-5 gap-4 md:px-10;
+}
+.ay-last-div {
+  @apply flex gap-2 justify-center bg-white rounded-lg;
+}
+.ay-last-btn-1 {
+  @apply h-10 border-2 border-gray-400
+  px-1 rounded-lg hover:bg-gray-400 hover:text-white;
+}
+.ay-last-svg-1 {
+  @apply w-8 h-8 fill-current;
+}
+.ay-last-btn-2 {
+  @apply h-10 border-2 hover:bg-indigo-500 hover:text-white hover:border-0 font-semibold rounded-lg
+  w-10;
+}
+.ay-last-btn-2-a {
+  @apply border-indigo-600 text-indigo-600;
+}
+.ay-last-btn-2-i {
+  @apply border-gray-400;
+}

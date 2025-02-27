@@ -1,0 +1,39 @@
+.footer {
+  @apply bg-white dark:bg-gray-900;
+}
+.footer-outer-div {
+  @apply grid grid-cols-1 px-10 py-5 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-6;
+}
+.footer-inner-div {
+  @apply text-start mb-6 md:mb-0;
+}
+.footer-a {
+  @apply flex items-center;
+}
+.footer-img {
+  @apply h-8 me-3;
+}
+.footer-span {
+  @apply self-center text-2xl font-semibold whitespace-nowrap dark:text-white;
+}
+.footer-p {
+  @apply text-white text-xl pt-5 font-semibold;
+}
+.footer-h2 {
+  @apply mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white;
+}
+.footer-ul {
+  @apply text-gray-500 dark:text-gray-400 font-medium;
+}
+.footer-li {
+  @apply mb-4;
+}
+.footer-li-a {
+  @apply hover:underline;
+}
+.footer-li-last {
+  @apply flex gap-2 justify-start items-center;
+}
+.footer-li-s-last {
+  @apply mb-4 flex justify-start gap-2 items-center;
+}

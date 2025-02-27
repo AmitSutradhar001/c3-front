@@ -1,0 +1,51 @@
+.to-outer {
+  @apply relative z-10;
+}
+.to-drop {
+  @apply fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in;
+}
+.to-inn-1 {
+  @apply fixed inset-0 z-10 w-screen overflow-y-auto;
+}
+.to-inn-2 {
+  @apply flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0;
+}
+.to-pan {
+  @apply relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95;
+}
+.to-inn-3 {
+  @apply bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4;
+}
+.to-inn-4 {
+  @apply sm:flex sm:items-start;
+}
+.to-inn-5 {
+  @apply mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10;
+}
+.to-exc {
+  @apply h-6 w-6 text-red-600;
+}
+.to-inn-6 {
+  @apply mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left;
+}
+.to-ti {
+  @apply text-base font-semibold leading-6 text-gray-900;
+}
+.to-inn-7 {
+  @apply mt-2;
+}
+.to-p {
+  @apply text-sm text-gray-500;
+}
+.to-span {
+  @apply text-lg font-medium text-red-400;
+}
+.to-inn-8 {
+  @apply bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6;
+}
+.to-btn-1 {
+  @apply inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto;
+}
+.to-btn-2 {
+  @apply mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto;
+}

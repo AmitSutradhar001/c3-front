@@ -1,0 +1,9 @@
+.sm-div {
+  @apply px-3 py-1 flex justify-center items-center gap-2 border-[1px] rounded-md border-gray-800;
+}
+.sm-p-tag {
+  @apply text-gray-800 font-semibold text-center;
+}
+.sm-img-tag {
+  @apply pt-1;
+}

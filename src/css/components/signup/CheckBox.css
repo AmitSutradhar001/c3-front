@@ -1,0 +1,9 @@
+.sig-chk-outer {
+  @apply flex items-center justify-start;
+}
+.sig-chk-input {
+  @apply w-4 h-4 border-[#0C0C16];
+}
+.sig-chk-label {
+  @apply p-2 font-medium text-[#0C0C16] cursor-text transition-all duration-200 ease-in-out transform;
+}

@@ -1,0 +1,36 @@
+.ad-outer {
+  @apply flex flex-col lg:flex-row lg:w-full justify-center md:justify-start pl-5 mt-10 gap-11 md:pl-20 pr-5 lg:pr-20;
+}
+.ad-inner {
+  @apply flex md:w-5/6 lg:w-2/3 flex-col;
+}
+.ad-ab {
+  @apply w-full border-t-[1px] mt-5 border-black;
+}
+.ad-middle-div {
+  @apply flex-col w-full gap-5 justify-center mb-5 items-center md:justify-start mt-2 px-4 md:pl-32;
+}
+.ad-h2 {
+  @apply text-2xl mt-8 font-bold;
+}
+.ad-middle-inner {
+  @apply flex flex-col mt-5 justify-start items-start gap-4;
+}
+.ad-m-1 {
+  @apply flex gap-3 w-full flex-col;
+}
+.ad-m-2 {
+  @apply gap-3 flex;
+}
+.ad-m-btn-1 {
+  @apply relative text-white h-10 w-32  inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium  rounded-lg bg-gradient-to-br from-pink-300 to-orange-400  hover:from-orange-400 hover:to-pink-300;
+}
+.ad-m-btn-2-span {
+  @apply relative px-5 py-2.5 transition-all ease-in duration-75  rounded-md;
+}
+.ad-m-btn-link {
+  @apply relative text-white h-10 w-32 inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:from-blue-500 hover:to-purple-500;
+}
+.ad-m-btn-link-span {
+  @apply relative px-5 py-2.5 transition-all ease-in duration-75  rounded-md group-hover:bg-opacity-0;
+}

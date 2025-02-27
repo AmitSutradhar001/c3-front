@@ -1,0 +1,9 @@
+.ab-outer {
+  @apply mt-8 w-full flex flex-col gap-4;
+}
+.ab-h2 {
+  @apply text-2xl font-bold;
+}
+.ab-p {
+  @apply font-normal text-pretty;
+}

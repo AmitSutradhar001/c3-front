@@ -1,0 +1,39 @@
+.ct-out {
+  @apply flex flex-col;
+}
+.ct-in-1 {
+  @apply flex flex-col justify-start items-start min-h-screen mx-10 my-20 border-2 border-gray-300 rounded-xl;
+}
+.ct-in-2 {
+  @apply flex flex-col md:flex-row gap-3 justify-center pb-5 px-3 items-center w-full mt-5;
+}
+.ct-h2 {
+  @apply text-3xl font-bold;
+}
+.ct-in-3 {
+  @apply w-full md:w-[500px] flex justify-start gap-3 items-center py-2 rounded-lg border-2;
+}
+.ct-input {
+  @apply w-full outline-none;
+}
+.ct-in-4 {
+  @apply w-full h-full;
+}
+.ct-in-5 {
+  @apply flex flex-col md:flex-row flex-1 h-fit;
+}
+.ct-in-6 {
+  @apply md:w-1/3;
+}
+.ct-in-6-1 {
+  @apply md:block;
+}
+.ct-in-6-ac {
+  @apply block;
+}
+.ct-in-6-ia {
+  @apply hidden;
+}
+.ct-in-7 {
+  @apply md:w-2/3 md:block;
+}
