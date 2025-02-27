@@ -34,7 +34,8 @@ const Applyed = () => {
           }),
         ]);
 
-        if (projectRes.status === 200) setPdata(projectRes.data.project);
+        setPdata((prev) => ({ ...prev, ...projectRes.data.project }));
+
         if (applicationRes.status === 200) {
           setpApply([...applicationRes.data.applications]); // Ensures new reference
         }
@@ -51,6 +52,7 @@ const Applyed = () => {
 
   console.log("pdata:", pdata);
   console.log("pApply:", pApply);
+  console.log("pdata truthy check:", !!pdata);
 
   return (
     <>
